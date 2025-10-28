@@ -12,7 +12,8 @@ module.exports = function(app) {
   app.use(
     "/solicitudes-sin-responder",
     createProxyMiddleware({
-       target: "http://192.168.0.18:8082",
+      target: "http://localhost:8082",
+      //target: "http://192.168.0.18:8082",
        // target: "http://das-back.local",
         changeOrigin: true,
         secure: false,
@@ -21,7 +22,8 @@ module.exports = function(app) {
     app.use(
     "/solicitudes/resumen",
     createProxyMiddleware({
-       target: "http://192.168.0.18:8082",
+      target:"http://localhost:8082",
+       //target: "http://192.168.0.18:8082",
        // target: "http://das-back.local",
         changeOrigin: true,
         secure: false,

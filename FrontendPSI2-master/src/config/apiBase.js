@@ -1,6 +1,8 @@
 
 // Dirección base de Spring Boot
-const API_BASE ='http://192.168.0.18:8082';
+const API_BASE ='http://localhost:8082';
+
+//const API_BASE ='http://192.168.0.18:8082';
 //const API_BASE ='http://das-back.local';
 
 // Endpoints base

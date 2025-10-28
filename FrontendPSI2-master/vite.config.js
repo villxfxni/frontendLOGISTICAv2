@@ -7,8 +7,10 @@ export default defineConfig({
     allowedHosts: [
       'das-front.local',
       'das-back.local',
-      'http://192.168.0.18:8082',
-      'http://192.168.0.18'
+      'http://127.0.0.1:8082',
+      'http://localhost:8082'
+      //'http://192.168.0.18:8082',
+      //'http://192.168.0.18'
     ],
     host: true,
     port: 3000,
@@ -19,7 +21,8 @@ export default defineConfig({
         secure: true,
       },
       "/solicitudes-sin-responder": {
-        target: "http://192.168.0.18:8082",
+        target: "http://localhost:8082",
+        //target: "http://192.168.0.18:8082",
        // target: "http://das-front.local",
 
         changeOrigin: true,
@@ -40,7 +43,7 @@ export default defineConfig({
       },
       // Agrega también el otro endpoint
       "/solicitudes": {
-        target: "http://192.168.0.18:8082",
+        target: "http://localhost:8082",
        // target: "http://das-back.local",
         changeOrigin: true,
         secure: false,

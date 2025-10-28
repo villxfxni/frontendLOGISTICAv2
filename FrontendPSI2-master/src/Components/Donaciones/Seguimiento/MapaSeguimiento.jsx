@@ -165,7 +165,8 @@ const RoutingMachine = ({ seguimiento }) => {
             
             
             const response = await axios.post(
-                'http://192.168.0.18:8082/proxy/ruta',
+                'http://localhost:8082/proxy/ruta',
+                //'http://192.168.0.18:8082/proxy/ruta',
                 {
                     coordinates: coordinates,
                     preference: 'fastest',
