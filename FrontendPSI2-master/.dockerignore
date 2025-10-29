@@ -3,6 +3,5 @@ dist
 .git
 .gitignore
 Dockerfile
-nginx.conf
 *.log
 .DS_Store
